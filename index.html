@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <header>
+      <nav>
+        <img class="header_logo" src="./images/logo.svg" />
+
+        <div class="header_links hidden_forMobile">
+          <div class="dropdown">
+            <div class="arrow">
+              <a href="#">Features </a>
+              <img class="down" src="./images/icon-arrow-down.svg" />
+            </div>
+
+            <div class="dropdown_menu hidden">
+              <a href="#"><img src="./images/icon-todo.svg" /> Todo List</a>
+              <a href="#"><img src="./images/icon-calendar.svg" /> Calendar</a>
+              <a href="#"><img src="./images/icon-reminders.svg" /> Reminder</a>
+              <a href="#"><img src="./images/icon-planning.svg" /> Planning</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <div class="arrow">
+              <a href="#">Company</a>
+              <img class="down" src="./images/icon-arrow-down.svg" />
+            </div>
+            <div class="dropdown_menu hidden" id="company">
+              <a href="#">History</a><a href="#">Our Team</a
+              ><a href="#">Blog</a>
+            </div>
+          </div>
+          <a href="/">Career</a>
+          <a href="/">About</a>
+        </div>
+        <a href="#" class="hidden_forMobile">Login</a>
+        <button type="button" class="register hidden_forMobile">
+          Register
+        </button>
+        <a href="#" class="header_menu hidden_forTabDesktop">
+          <img src="./images/icon-menu.svg" class="header_menu" />
+        </a>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="image"></div>
+      <div class="content">
+        <div class="description">
+          <h2>Make remote work</h2>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <div class="btn"><button class="cta">Learn more</button></div>
+        </div>
+        <div class="icons">
+          <img src="./images/client-databiz.svg" />
+          <img src="./images/client-audiophile.svg" />
+          <img src="./images/client-meet.svg" />
+          <img src="./images/client-maker.svg" />
+        </div>
+      </div>
+      <div class="menu_collapse hidden hidden_forTabDesktop">
+        <div class="cross">
+          <img class="cross_img" src="./images/icon-close-menu.svg" />
+        </div>
+        <div class="collapse">
+          <div class="dropdown">
+            <div class="arrow">
+              <a href="#">Features </a>
+              <img class="down" src="./images/icon-arrow-down.svg" />
+            </div>
+
+            <div class="dropdown_menu hidden">
+              <a href="#"><img src="./images/icon-todo.svg" /> Todo List</a>
+              <a href="#"><img src="./images/icon-calendar.svg" /> Calendar</a>
+              <a href="#"><img src="./images/icon-reminders.svg" /> Reminder</a>
+              <a href="#"><img src="./images/icon-planning.svg" /> Planning</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="arrow">
+              <a href="#">Company</a>
+              <img class="down" src="./images/icon-arrow-down.svg" />
+            </div>
+            <div class="dropdown_menu hidden" id="company">
+              <a href="#">History</a><a href="#">Our Team</a
+              ><a href="#">Blog</a>
+            </div>
+          </div>
+          <a href="#">Careers</a>
+          <a href="#">About</a>
+          <div class="acc">
+            <a href="#">Login</a>
+            <button type="button" class="register regis">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
